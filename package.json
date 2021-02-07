@@ -1,11 +1,11 @@
 {
-  "name": "basic-node-addon",
+  "name": "cpp-node-addon",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "gypfile": true,
   "scripts": {
-    "start": "node index.js",
+    "start": "npm run build && node index.js",
     "build": "node-gyp build",
     "rebuild:dev": "node-gyp rebuild --debug",
     "build:dev": "node-gyp rebuild --debug",

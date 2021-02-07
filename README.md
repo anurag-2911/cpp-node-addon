@@ -29,7 +29,7 @@ b) Node v10
             "name": "Debug",
             "preLaunchTask": "npm: build:dev",
             "program": "C:/Program Files/nodejs/node",
-            "args": ["E:/experiment-projects/basic-node-addon/index.js"]
+            "args": ["E:/experiment-projects/cpp-node-addonindex.js"]
         }
     ]
 }

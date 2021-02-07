@@ -1,5 +1,5 @@
-const testAddon = require('./build/Debug/testaddon.node');
-var res=testAddon.hello();
+const nodeaddon = require('./build/Debug/nodeaddon.node');
+var res=nodeaddon.hello();
 console.log(res);
 
-module.exports = testAddon;
+module.exports = nodeaddon;
