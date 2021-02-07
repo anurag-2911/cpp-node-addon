@@ -1,10 +1,8 @@
-# Basic node addon
+# Basic c++ node addon using NAPI
 
 This example is to help explain debugging in VSCode for C++ based NodeJS addons.
 
-The actual blog post is at: 
 
-https://medium.com/@atulanand94/debugging-nodejs-c-addons-using-vs-code-27e9940fc3ad
 
 **Requriements:**
 
@@ -17,6 +15,23 @@ https://medium.com/@atulanand94/debugging-nodejs-c-addons-using-vs-code-27e9940f
 3. `npm run rebuild:dev`
 4. `npm run start`
 
+#to debug add following in visual studio code project launch.json
 
-Hope this helps someone !! 🌮
+{
+    
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "preLaunchTask": "npm: build:dev",
+            "program": "C:/Program Files/nodejs/node",
+            "args": ["E:/experiment-projects/basic-node-addon/index.js"]
+        }
+    ]
+}
+
+Note: Here program is path for node js exe and args is path of index.js 
 # cpp-node-addon
