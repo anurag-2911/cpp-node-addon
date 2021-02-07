@@ -110,12 +110,14 @@ std::string zappwindowsaddon::obfuscate(const Napi::CallbackInfo& info) {
     } 
     // Retrieve the buffer
     Napi::Buffer<char> bufferObj = info[0].As<Napi::Buffer<char>>();
+    char* data=bufferObj.Data();
+    size_t length=bufferObj.Length();
     
     // size_t length =
-    // char* output=obfuscateInput(buffer.Data(),length);
-    // obfuscatedVal=buffer.ToString();
+    obfuscateInput(data,length);
+   // obfuscatedVal=bufferObj.Data();
     // obfuscatedVal=output;
-    return obfuscatedVal;
+    return data;
 }
 char* obfuscateInput( char* data, size_t length )
 {
