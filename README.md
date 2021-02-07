@@ -4,18 +4,19 @@ This example is to help explain debugging in VSCode for C++ based NodeJS addons.
 
 
 
-**Requriements:**
+#Requriements:
+a) Install lldb extension to debug in vs code.
 
-- Node v10
+b) Node v10
 
-**To Run**
+#To Run
 
 1. `git clone this repo`
 2. `npm install`
 3. `npm run rebuild:dev`
 4. `npm run start`
 
-#to debug add following in visual studio code project launch.json
+#To debug add following in visual studio code project launch.json
 
 {
     
