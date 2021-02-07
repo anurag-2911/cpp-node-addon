@@ -5,8 +5,8 @@
   "main": "index.js",
   "gypfile": true,
   "scripts": {
-    "start": "npm run build && node index.js",
-    "build": "node-gyp build",
+    "start": "npm run build:dev && node index.js",
+    "build": "node-gyp rebuild",
     "rebuild:dev": "node-gyp rebuild --debug",
     "build:dev": "node-gyp rebuild --debug",
     "clean": "node-gyp clean"
